@@ -4,8 +4,6 @@ services:
 language: bash
 env:
   matrix:
-    - MAKE_TARGET=arm64-debian
-    - MAKE_TARGET=armhf-debian
     - MAKE_TARGET=armhf-raspbian
 script:
   - make shellcheck
@@ -22,6 +20,6 @@ deploy:
     - rootfs-${MAKE_TARGET}-${TRAVIS_TAG}.tar.gz.sha256
   on:
     tags: true
-    repo: hypriot/os-rootfs
+    repo: arnobroekhof/os-rootfs
   api_key:
-    secure: EMPAsheQaVn8DrLDuh74qmG8I+OVfB5g+dRXp2U55B39NBULHV+nDgjXJR0k4tHnGY9+azsMYkJXziphKQzmpMsFpiNbeBRg0dhWNJyB6V7xIIchxcNiEBc+qhbsDLAeByjoXSLV3IE/bvnQRhTydHqsq60/EetpBTWv/afK03w43AwOBABDiYZonE5HXgrgP0L7CHg4l/hc3KCfisc4SykOqzSmlJ6JD+YZGNWe1cwb5Plf9iardfYn/U3gYpTWhqC19fV6kUNb7mB76TNv4mlbQLnC8/Yie/Z/a+QaSGDQAGzduzxlb2m/5Gbm7BRGN4XD97JdHRIkAuOCEqLsRwzQBfiRX9A5cG/SRHYWomaPh+10+4hx8pwCxvnhHFh4nuDinIkUmxwKpX7HAcq6hVQb0KVBQaZ6qo2tisDlEG4L3HMU/sddae/MA33Nk25Ql3dA67zBDB1Lf/d0Z/9oKDqBwNs8lI4soFM1/cTel3sXwnbIJWROvVOphABc1sGQlRF5HMJZODmVeYag+h4/u/njgA4uW/p8DEbSDT56pHvEfvZdjAl1zrDUJmTP509TsTkfHsBNIjxnAFbCVSgCOD3OdnbuM+5mzoK4foTUZNV0/TjcCY858wKiPE3LZIpZW3G6HtyLbyZ9n7ABsxs48npfSbjpH6umpGiW5IrA9uI=
+    secure: MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtjtduozpiRonyRHxG8+h\nNd4ZEcMkesxoapwap0DPDIivoaly1zAJXPcTSqjHfBC1Bp4c+P1luAm+7hbBZIDy\nA41jtVWYosGCQ4VYNcfsoxGJvBanFXDmlgkRpsX4ZWIyRZXW6RtQw7AjNp3qaiNI\nNB6l04qMoROLO4RekYGDlI2YHE8/iAvcjnabudd+FFcfXncyV6G/Iix16YqNFTo1\nqDBTjAWGjF4aMiwCsOvdd7VHEfre8PHDEV2MgEgrA+SDPYl7OUxJL8DqjMYN7iIx\nQ/mjJgEp0Pmmh1nL/s34uc9c94BAG+hjvi27/P5lenl9MLKraZvBH3/cqwbFBI5+\nx9LubziEE+X2KWUAsWh0t95f7AkkvvKsIpURNs6gVxHbqdrY5KWSys+pmyRvPFXY\nyg6QMq8yuK0j9B4MGiZbn6XYKhpsfoprwGJEYhmPJV0CkM7iFi4Ya/aLO18cl398\nJUkOUo/+6aRoZgacGpa6SlQP2DX9k4XGQfrtgnrhT563mx08r55aRRH6bzN0nRfC\njbqaJMmqTsSv8KA/cWvsczOA0xubA0oraCBEvY1hoqV0g20fFBAKoiemX0N6VEqV\nnZnWbyVdvz12JtxTb2sm7unJdVvw3e6oAGPKkezrURnu3RsGDx4R9hpChJ0OL4Tu\nE/t4qDQeMtg1ioxgi81LDocCAwEAAQ==
